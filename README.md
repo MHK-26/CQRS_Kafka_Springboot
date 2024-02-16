@@ -8,10 +8,7 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Overview:
 The Java CQRS and Event Sourcing with Kafka for Banking Operations project is a robust and scalable system designed to handle core banking operations while leveraging advanced architectural patterns such as CQRS and event sourcing. This project emphasizes building a secure, event-driven system capable of processing financial transactions efficiently.
