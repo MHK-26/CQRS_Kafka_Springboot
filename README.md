@@ -46,26 +46,10 @@ Restoring Read Database:
 Implement a feature to restore the read database from event logs.
 Allow for efficient recovery of the read-side database in case of failures or data corruption.
 
-## Tech Stack
-
-- Java
-- Spring Boot
-- Docker
-- Kafka
-- [Other Technologies]
-
-## Getting Started
-
-Provide instructions on how to set up the project locally.
-
-```bash
-# Clone the repository
-git clone [repository_url]
-
-# Navigate to the project directory
-cd [project_directory]
-
-# Build and run the Docker containers
-docker-compose up
-
-# Access the application at http://localhost:8080
+## TTech Stack:
+- Java: Core programming language for building the application logic.
+- Spring Boot: Framework for creating robust and scalable microservices.
+- CQRS Pattern: Optimize read and write operations independently.
+- Event Sourcing: Capture and persist state-changing events.
+- Kafka: Distributed streaming platform for building real-time data pipelines.
+- Docker: Containerization for consistent deployment across environments.
