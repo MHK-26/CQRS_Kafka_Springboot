@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AccountCommandHandler implements CommandHandler {
+public class  AccountCommandHandler implements CommandHandler {
     @Autowired
     private EventSourcingHandler<AccountAggregate> eventSourcingHandler;
 
@@ -38,5 +38,10 @@ public class AccountCommandHandler implements CommandHandler {
         var aggregate = eventSourcingHandler.getById(command.getId());
         aggregate.closeAccount();
         eventSourcingHandler.save((aggregate));
+    }
+
+    @Override
+    public void handle(RestoreReadDBCommand command) {
+        eventSourcingHandler.republishEvents();
     }
 }
